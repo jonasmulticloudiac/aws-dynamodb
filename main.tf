@@ -6,15 +6,15 @@ terraform {
   backend "s3" {
     bucket = "cloudzmistatf"
     key    = "terraform.tfstate"
-    region = "us-east-1"
+    region = "us-east-2"
   }
 }
 
 ## random provider
 provider "random" {}
 
-## Provider us-east-1
+## Provider us-east-2
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-2"
 }
 
