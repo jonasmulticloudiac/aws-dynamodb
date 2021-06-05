@@ -1,7 +1,9 @@
 name: "TF-Plan-Infra"
 
 on:
-  workflow_dispatch:
+  push:
+    branches: 
+      - feature-1
 
 jobs:
   terraform:
