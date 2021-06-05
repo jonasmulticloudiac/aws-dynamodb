@@ -1,8 +1,9 @@
 name: "TF-Apply-Infra-Release"
 
 on:
-  workflow_dispatch:
-
+  push:
+    branches: 
+      - master
 jobs:
   terraform:
     name: "Terraform"
